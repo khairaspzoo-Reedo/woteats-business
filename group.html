@@ -34,11 +34,34 @@
     <li><strong>Share the link.</strong><br><span class="muted">A reminder goes out. Plates are packed with a name on each.</span></li>
     <li><strong>One drop. One invoice.</strong><br><span class="muted">Live progress on the order. The bill goes to the invoice email.</span></li>
   </ol>
-  <div class="row"><a class="btn" href="https://woteats.com/corporate">Set up the account</a></div>
+  <div class="row"><a class="btn" href="https://business.woteats.com/group.html#apply">Set up the account</a></div>
 </section>
 <section class="grid2">
   <article class="card"><img class="photo" src="img/office.jpg" alt=""><div class="pad"><h2>What you can see</h2><p class="muted">Who ordered, from where, and what it landed at. No fixed canteen cost if the office is quiet that day.</p></div></article>
   <article class="card"><img class="photo" src="img/canapes.jpg" alt=""><div class="pad"><h2>Evenings too</h2><p class="muted">The late project, the board arriving at six. Same account. Same labels.</p></div></article>
+</section>
+
+
+<section id="apply">
+  <h2>The office</h2>
+  <form class="ask card pad" data-kind="corporate" style="margin-top:14px">
+    <label>Company<input name="company" required></label>
+    <label>Who orders<input name="contactName" required></label>
+    <label>Their role<input name="role" required></label>
+    <label>Work email<input name="email" type="email" required></label>
+    <label>Phone<input name="phone" required></label>
+    <label>Town<select name="town"><option>Belfast</option><option>Derry</option><option>Bangor</option><option>Holywood</option><option>Armagh</option><option>Portrush</option><option>Enniskillen</option><option>Omagh</option><option>Newry</option><option>Newcastle</option><option>Ballymena</option><option>Other</option></select></label>
+    <label>Office address<input name="address" required></label>
+    <label>People<select name="headcount"><option>5–15</option><option>16–40</option><option>41–100</option><option>More than 100</option></select></label>
+    <label>How often<select name="cadence"><option>A few times a month</option><option>Every week</option><option>Most weekdays</option><option>One-off events</option></select></label>
+    <label>Usual spend<select name="budget"><option>Under £150</option><option>£150–£400</option><option>£400–£1,000</option><option>Over £1,000</option></select></label>
+    <label>Dietary needs<textarea name="dietary"></textarea></label>
+    <label>Invoice email<input name="invoiceEmail" type="email" placeholder="Same as work email if blank"></label>
+    <label>How you want it to work<textarea name="notes"></textarea></label>
+    <label class="check"><input type="checkbox" name="agreed"> WotEats can email and ring this office about an account.</label>
+    <button class="btn" type="submit">Ask for an account</button>
+    <p data-note class="muted"></p>
+  </form>
 </section>
 
 </main>
@@ -65,12 +88,13 @@
     <div>
       <p class="kicker">The menu app</p>
       <a href="https://woteats.com">woteats.com</a>
-      <a href="https://woteats.com/partner">Partner</a>
-      <a href="https://woteats.com/courier">Courier</a>
-      <a href="https://woteats.com/corporate">Corporate</a>
+      <a href="https://business.woteats.com/kitchens.html#apply">Partner</a>
+      <a href="https://business.woteats.com/riders.html#apply">Courier</a>
+      <a href="https://business.woteats.com/group.html#apply">Corporate</a>
       <a href="https://woteats.com/terms">Terms</a>
     </div>
   </div>
 </footer>
+<script src="apply.js"></script>
 </body>
 </html>

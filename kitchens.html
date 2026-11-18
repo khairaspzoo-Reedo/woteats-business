@@ -26,7 +26,7 @@
     <p class="kicker">Kitchens and caterers</p>
     <h1>Cook. We’ll carry the order.</h1>
     <p class="lede">From a counter to a house kitchen. You set the plate price. Orders arrive with a name, a time, and an address. Office drops and diner drops can both be yours.</p>
-    <div class="row"><a class="btn" href="https://woteats.com/partner">Partner with us</a><a class="btn ghost" href="https://woteats.com/ledger">Read the fair terms</a></div>
+    <div class="row"><a class="btn" href="https://business.woteats.com/kitchens.html#apply">Partner with us</a><a class="btn ghost" href="https://woteats.com/ledger">Read the fair terms</a></div>
   </div>
   <div class="card"><img class="photo" style="height:320px" src="img/kitchen.jpg" alt="A chef at the pass"></div>
 </section>
@@ -36,6 +36,28 @@
     <li><strong>We read the menu.</strong><br><span class="muted">If the town fits, we open the door with you.</span></li>
     <li><strong>You get the order.</strong><br><span class="muted">Cook it. A rider collects. You are paid on the schedule we agree, in writing.</span></li>
   </ol>
+</section>
+
+
+<section id="apply">
+  <h2>The kitchen</h2>
+  <form class="ask card pad" data-kind="partner" style="margin-top:14px">
+    <label>Kitchen name<input name="kitchenName" required></label>
+    <label>Your name<input name="contactName" required></label>
+    <label>Email<input name="email" type="email" required></label>
+    <label>Phone<input name="phone" required></label>
+    <label>Town<select name="town"><option>Belfast</option><option>Derry</option><option>Bangor</option><option>Holywood</option><option>Armagh</option><option>Portrush</option><option>Enniskillen</option><option>Omagh</option><option>Newry</option><option>Newcastle</option><option>Ballymena</option><option>Other</option></select></label>
+    <label>Address<input name="address" required></label>
+    <label>Postcode<input name="postcode" required></label>
+    <label>What you cook<input name="cuisine" required></label>
+    <label>Size<select name="scale"><option>Counter</option><option>Room</option><option>House</option></select></label>
+    <label>Food hygiene rating<select name="hygiene"><option>5</option><option>4</option><option>3</option><option>Not rated yet</option></select></label>
+    <label>Website, if you have one<input name="website"></label>
+    <label>Anything we should know<textarea name="notes"></textarea></label>
+    <label class="check"><input type="checkbox" name="agreed"> WotEats can email and ring me about this kitchen.</label>
+    <button class="btn" type="submit">Send the kitchen</button>
+    <p data-note class="muted"></p>
+  </form>
 </section>
 
 </main>
@@ -62,12 +84,13 @@
     <div>
       <p class="kicker">The menu app</p>
       <a href="https://woteats.com">woteats.com</a>
-      <a href="https://woteats.com/partner">Partner</a>
-      <a href="https://woteats.com/courier">Courier</a>
-      <a href="https://woteats.com/corporate">Corporate</a>
+      <a href="https://business.woteats.com/kitchens.html#apply">Partner</a>
+      <a href="https://business.woteats.com/riders.html#apply">Courier</a>
+      <a href="https://business.woteats.com/group.html#apply">Corporate</a>
       <a href="https://woteats.com/terms">Terms</a>
     </div>
   </div>
 </footer>
+<script src="apply.js"></script>
 </body>
 </html>

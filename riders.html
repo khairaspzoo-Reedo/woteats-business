@@ -26,9 +26,29 @@
     <p class="kicker">Couriers</p>
     <h1>Carry it. Keep the hours.</h1>
     <p class="lede">Bicycle, e-bike, motorbike, car, or on foot. Lunch, evenings, weekends. You need the right to work in the UK. You see a drop before it is yours.</p>
-    <a class="btn" href="https://woteats.com/courier">Apply</a>
+    <a class="btn" href="https://business.woteats.com/riders.html#apply">Apply</a>
   </div>
   <div class="card"><img class="photo" style="height:320px" src="img/courier.jpg" alt="A courier on a wet street"></div>
+</section>
+
+
+<section id="apply">
+  <h2>You</h2>
+  <form class="ask card pad" data-kind="courier" style="margin-top:14px">
+    <label>Full name<input name="fullName" required></label>
+    <label>Email<input name="email" type="email" required></label>
+    <label>Phone<input name="phone" required></label>
+    <label>Town<select name="town"><option>Belfast</option><option>Derry</option><option>Bangor</option><option>Holywood</option><option>Armagh</option><option>Portrush</option><option>Enniskillen</option><option>Omagh</option><option>Newry</option><option>Newcastle</option><option>Ballymena</option><option>Other</option></select></label>
+    <label>Postcode you start from<input name="postcode" required></label>
+    <label>How you carry it<select name="vehicle"><option>Bicycle</option><option>E-bike</option><option>Motorbike</option><option>Car</option><option>On foot</option></select></label>
+    <label>When you can work<select name="availability"><option>Weekday lunch</option><option>Evenings</option><option>Weekends</option><option>Most of the week</option></select></label>
+    <label>Delivery experience, if any<textarea name="experience"></textarea></label>
+    <label>Anything else<textarea name="notes"></textarea></label>
+    <label class="check"><input type="checkbox" name="rightToWork"> I have the right to work in the UK.</label>
+    <label class="check"><input type="checkbox" name="agreed"> WotEats can email and ring me about courier work.</label>
+    <button class="btn" type="submit">Send my details</button>
+    <p data-note class="muted"></p>
+  </form>
 </section>
 
 </main>
@@ -55,12 +75,13 @@
     <div>
       <p class="kicker">The menu app</p>
       <a href="https://woteats.com">woteats.com</a>
-      <a href="https://woteats.com/partner">Partner</a>
-      <a href="https://woteats.com/courier">Courier</a>
-      <a href="https://woteats.com/corporate">Corporate</a>
+      <a href="https://business.woteats.com/kitchens.html#apply">Partner</a>
+      <a href="https://business.woteats.com/riders.html#apply">Courier</a>
+      <a href="https://business.woteats.com/group.html#apply">Corporate</a>
       <a href="https://woteats.com/terms">Terms</a>
     </div>
   </div>
 </footer>
+<script src="apply.js"></script>
 </body>
 </html>
